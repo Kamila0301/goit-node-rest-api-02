@@ -2,9 +2,11 @@ const express = require("express");
 
 const ctrl = require("../../controllers/contactsControllers");
 
-const contactsRouter = express.Router();
 const { validateBody } = require("../../middlewares");
+
 const contactsSchemas = require("../../schemes/contactsSchemas");
+
+const contactsRouter = express.Router();
 
 contactsRouter.get("/", ctrl.listContacts);
 
