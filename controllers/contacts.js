@@ -1,4 +1,4 @@
-const contacts = require("../services/contactsServices");
+const contacts = require("../services/contacts");
 
 const { HttpError, ctrlWrapper } = require("../helpers");
 
